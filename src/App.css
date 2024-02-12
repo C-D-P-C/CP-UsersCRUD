@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.app__title {
+  text-align: left;
+  padding: 15px;
+  color: black;
+  margin-right: auto;
+}
+
+.app__btn {
+  display: block;
+  text-align: center;
+  height: 50px;
+  background-color: #555a88;
+  color: white;
+  padding: 7px;
+  font-size: 15px;
+  margin-left: auto;
+}
+
+.app__btn:hover {
+  transform: scale(1.1);
+  box-shadow: -5px -5px 5px rgba(0, 3, 189, 0.144);
+  transition: transform 0.25s;
+}

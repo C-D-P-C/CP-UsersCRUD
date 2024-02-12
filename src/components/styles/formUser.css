@@ -1,0 +1,146 @@
+.form__background {
+  background-color: rgba(255, 252, 252, 0.212);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  backdrop-filter: blur(3px);
+  transform: scale(0);
+  transition: transform 0.25s;
+}
+
+@media only screen and (max-width: 400px) {
+  .form__background {
+    background-color: rgba(255, 252, 252, 0.212);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    transform: scale(0);
+    transition: transform 0.25s;
+  }
+}
+
+.form__background.able {
+  transform: scale(1);
+  transition: transform 0.25s;
+}
+
+.form__conteiner {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  font-size: 25px;
+  color: black;
+  height: 700px;
+  max-width: 800px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1200px) {
+  .form__conteiner {
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .form__conteiner {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .form__conteiner {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 575px) {
+  .form__conteiner {
+    max-width: 100%;
+  }
+
+  .form__item input {
+    width: 100%;
+  }
+
+  .form__item input[type="date"] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .form__conteiner {
+    max-width: 100%;
+    padding-left: 0%;
+  }
+}
+
+.form__close {
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+}
+
+.form__close:hover {
+  color: rgb(25, 0, 255);
+}
+
+.form__title {
+  text-align: center;
+  margin-bottom: -50px;
+  position: relative;
+  top: -50px;
+  font-size: 40px;
+}
+
+.form__btn {
+  background-color: #555a88;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.form__btn:hover {
+  transform: scale(1.1);
+  box-shadow: -5px -5px 5px black;
+  transition: transform 0.25s;
+}
+
+.form__submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -110px;
+  margin-bottom: 30px;
+  padding: 110px;
+}
+
+.form__item input {
+  height: 30px;
+  width: 200%;
+  background-color: rgba(128, 128, 128, 0.301);
+}
+
+.form__item input[type="date"] {
+  height: 30px;
+  width: 170%;
+  background-color: rgba(128, 128, 128, 0.301);
+}
